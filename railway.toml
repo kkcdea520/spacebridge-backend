@@ -1,7 +1,7 @@
 # Railway 部署配置
 
-# 构建命令
-build = "npm run build"
+# 构建命令（包含 Prisma 生成）
+build = "npm install && npx prisma generate && npm run build"
 
 # 启动命令
 start = "npm start"
